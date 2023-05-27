@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="w-full flex justify-center py-10">
+        <div class="w-full flex justify-center pt-10">
             <button class="bg-customBlue py-4 px-24 rounded-md font-bold text-lg text-white">Diagnosa Sekarang</button>
         </div>
     </div>
