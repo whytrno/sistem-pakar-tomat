@@ -5,7 +5,7 @@
 @section('content')
     <h1 class="text-2xl font-semibold text-primary">Diagnosa Penyakit</h1>
 
-    <div class="border rounded-xl drop-shadow-2xl py-10 px-8 text-xl font-semibold text-secondary space-y-5 h-[30rem]">
+    <div class="border rounded-xl drop-shadow-2xl py-10 px-8 text-xl font-semibold text-secondary space-y-5">
         <h3>Gejala</h3>
 
         <div class="grid grid-cols-12 gap-14">
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="absolute bottom-0 w-full flex justify-center py-10">
+        <div class="w-full flex justify-center py-10">
             <button class="bg-customBlue py-4 px-24 rounded-md font-bold text-lg text-white">Diagnosa Sekarang</button>
         </div>
     </div>

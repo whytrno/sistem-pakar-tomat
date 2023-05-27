@@ -1,4 +1,4 @@
-<div>
+<div class="absolute bottom-0">
     <div class="grid grid-cols-3 bg-blue-200">
         <div>
             <h1 class="text-3xl font-bold">LOGO</h1>
