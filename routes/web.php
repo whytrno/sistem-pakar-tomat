@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\DiagnosaController;
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [MainController::class, 'index']);
+
+Route::middleware(['guest'])->group(function () {
+    Route::get('/login', [MainController::class, 'login'])->name('login');
+    Route::post('/login', [MainController::class, 'loginProcess']);
+    Route::get('/register', [MainController::class, 'register']);
+    Route::post('/register', [MainController::class, 'registerProcess']);
 });
-Route::get('/diagnosa', DiagnosaController::class . '@index');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/logout', [MainController::class, 'logout']);
+    Route::get('/diagnosa', [MainController::class, 'diagnosa']);
+    Route::get('/diagnosa/hasil', [MainController::class, 'hasil']);
+});

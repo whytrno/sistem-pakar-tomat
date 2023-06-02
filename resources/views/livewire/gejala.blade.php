@@ -43,9 +43,9 @@
                 </div>
 
                 @foreach ($filteredKondisi as $item)
-                    <p wire:click="changeSelected('kondisi', '{{ $item }}', {{ $i }})"
+                    <p wire:click="changeSelected('kondisi', '{{ $item[0] }}', {{ $i }})"
                         class="py-3 px-5 hover:bg-customBlue hover:text-white rounded-md cursor-pointer">
-                        {{ $item }}
+                        {{ $item[0] }}
                     </p>
                 @endforeach
             </div>
@@ -74,8 +74,8 @@
                         </p>
                     </div>
                     <div class="flex justify-between px-5">
-                        <a href="#" class="text-[#10B982]">Lihat Hasil</a>
-                        <p>Abaikan</p>
+                        <a href="{{ url('/diagnosa/hasil') }}" class="text-[#10B982]">Lihat Hasil</a>
+                        <p wire:click="toggleSuccessModal()" class="cursor-pointer">Abaikan</p>
                     </div>
                 </div>
             </div>

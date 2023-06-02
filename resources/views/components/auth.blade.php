@@ -30,13 +30,8 @@
 </head>
 
 <body>
-    @include('components.navbar')
+    @yield('content')
 
-    <div>
-        @yield('content')
-    </div>
-
-    @include('components.footer')
     @livewireScripts
 </body>
 
