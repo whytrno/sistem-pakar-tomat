@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use Livewire\Component;
 
 class AdminController extends Controller
 {
@@ -13,8 +15,11 @@ class AdminController extends Controller
 
     public function user()
     {
-        return view('admin.user');
+    $users = User::select('*')->get();
+   return view('admin.user', ['users' => $users]);
+
     }
+
     public function gejala()
     {
         return view('admin.gejala');
@@ -27,4 +32,5 @@ class AdminController extends Controller
     {
         return view('admin.hasil');
     }
+    
 }
