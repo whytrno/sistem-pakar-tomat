@@ -21,19 +21,20 @@
             <thead>
                 <tr class="bg-blue-500 text-white font-bold text-xl">
                     <th class="px-5 py-4 w-20">No</th>
-                    <th class="px-5 py-4 w-44">Kode Penyakit</th>
+                    <th class="px-5 py-4 w-44">Nama Pengguna</th>
                     <th class="px-5 py-4">Nama Penyakit</th>
-                    <th class="px-5 py-4">Solusi</th>
+                    <th class="px-5 py-4">Kode Gejala</th>
+                    <th class="px-5 py-4">Akurasi</th>
                     <th class="px-5 py-4 w-40">Aksi</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="text-secondary2 font-bold text-center border-b-2 border-secondary-2">
                     <td>1</td>
-                    <td>P1</td>
+                    <td>Wahyu</td>
                     <td>Busuk (Phytophtora infestans de Barry)</td>
-                    <td>Untuk mengatasi penyakit busuk pada tanaman tomat, langkah-langkah yang dapat dilakukan
-                        adalah dengan melakukan rotasi tanaman dan penyemprotan fungisida. </td>
+                    <td>G1,G2,G3 </td>
+                    <td>80%</td>
                     <td class="flex justify-center gap-5">
                         <img src="{{ url('icons/admin/edit.svg') }}" alt="">
                         <img src="{{ url('icons/admin/delete.svg') }}" alt="">
