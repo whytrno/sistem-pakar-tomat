@@ -37,24 +37,24 @@
                 <h1 class="font-extrabold text-2xl textcenter border-b-2 border-white py-8">Admin Dashboard</h1>
                 <div class="font-extrabold text-xl py-8 grid grid-cols-12 space-x-5 items-center">
                     <img src="{{ url('icons/admin/penyakit.svg') }}" alt="" class="h-8 col-span-1">
-                    <h1 class="col-span-11">Data penyakit & solusi</h1>
+                    <h1 class="col-span-11"><a href="{{ url('/admin/') }}">Data penyakit & solusi</a></h1>
                 </div>
                 <div class="font-extrabold text-xl py-8 grid grid-cols-12 space-x-5 items-center">
                     <img src="{{ url('icons/admin/gejala.svg') }}" alt="" class="h-8 col-span-1">
-                    <h1 class="col-span-11">Data gejala</h1>
+                    <h1 class="col-span-11"><a href="{{ url('/admin/gejala') }}">Data gejala</a></h1>
                 </div>
                 <div class="font-extrabold text-xl py-8 grid grid-cols-12 space-x-5 items-center">
                     <img src="{{ url('icons/admin/keyakinan.svg') }}" alt="" class="h-8 col-span-1">
-                    <h1 class="col-span-11">Data keyakinan</h1>
+                    <h1 class="col-span-11"><a href="{{ url('/admin/keyakinan') }}">Data keyakinan</a></h1>
                 </div>
                 <div class="font-extrabold text-xl py-8 grid grid-cols-12 space-x-5 items-center">
                     <img src="{{ url('icons/admin/user.svg') }}" alt="" class="h-8 col-span-1">
-                    <h1 class="col-span-11">Data user</h1>
+                    <h1 class="col-span-11"><a href="{{ url('/admin/user') }}">Data user</a></h1>
                 </div>
                 <div
                     class="font-extrabold text-xl py-8 grid grid-cols-12 space-x-5 items-center border-b-2 border-white">
                     <img src="{{ url('icons/admin/hasil.svg') }}" alt="" class="h-8 col-span-1">
-                    <h1 class="col-span-11">Hasil diagnosa</h1>
+                    <h1 class="col-span-11"><a href="{{ url('/admin/hasil') }}">Hasil diagnosa</a></h1>
                 </div>
                 <img class="mt-8 h-14" src="{{ url('icons/admin/logout.svg') }}">
             </div>
