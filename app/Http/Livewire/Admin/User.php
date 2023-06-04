@@ -8,6 +8,7 @@ class User extends Component
 {
     public function render()
     {
-        return view('livewire.admin.user');
+        $users = User::all();
+        return view('livewire.admin.user', compact('users'));
     }
 }
