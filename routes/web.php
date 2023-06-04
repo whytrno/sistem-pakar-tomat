@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +25,12 @@ Route::middleware(['guest'])->group(function () {
 });
 
 Route::middleware(['auth'])->group(function () {
+    Route::get('/admin', [AdminController::class, 'index']);
+    Route::get('/admin/gejala', [AdminController::class, 'gejala']);
+    Route::get('/admin/keyakinan', [AdminController::class, 'keyakinan']);
+    Route::get('/admin/hasil', [AdminController::class, 'hasil']);
+    Route::get('/admin/user', [AdminController::class, 'user']);
+
     Route::get('/logout', [MainController::class, 'logout']);
     Route::get('/diagnosa', [MainController::class, 'diagnosa']);
     Route::get('/diagnosa/hasil', [MainController::class, 'hasil']);
